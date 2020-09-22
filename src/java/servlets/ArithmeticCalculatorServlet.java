@@ -93,7 +93,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
         }
        if(sign.equals("%"))
         {
-           total = num1 / num2;
+           total = num1 % num2;
            request.setAttribute("message", total);
            getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request,response);
            return;

@@ -15,14 +15,15 @@
         <h1>Age Calculator</h1>
         <form action="age" method="post">
            <table>
-               <tr><td><p>Enter your age:</p></td><td><input type="text" name="age" value=""></td></tr>
+               <tr><td><p>Enter your age:</p></td><td><input type="text" name="age" value="${age}"></td></tr>
         </table>
             
             <br>
             <input type="submit" value="Age next birthday">
             <br>
-            <p>${message}</p>
-            <a href="http://localhost:8084/Week2Lab_Calculators/arithmetic">Arithmetic Calculator</a>
+            
+            <p>${message} ${age2}</p>
+            <a href="arithmetic">Arithmetic Calculator</a>
         </form>
         
     </body>
